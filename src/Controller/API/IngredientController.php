@@ -51,7 +51,7 @@ class IngredientController extends AbstractController
 
     }
 
-    // vue d'un ingredient
+    //vue d'un ingredient
     #[Route('/api/ingredients/show/{id}', requirements:['id'=> Requirement::DIGITS])]
     public function show(Ingredient $ingredient):JsonResponse
     {
